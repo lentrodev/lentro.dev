@@ -1,0 +1,127 @@
+{
+  "appBarTitle": "lentro.dev",
+  "homeText": "Hello! I'm Mikhail, and I'm a backend .NET developer.",
+
+  "aboutMeMarkdownFilePath" : "data/aboutMe.md",
+
+  "education": [
+    {
+      "name": "WIT University of Information Technology and Management under the auspices of the Polish Academy of Sciences",
+      "fromYear": "2020",
+      "link": "https://wit.edu.pl"
+    },
+    {
+      "name": "Separate structural subdivision Kharkiv Computer and Technological Professional College of NTU KhPI ",
+      "fromYear": "2018",
+      "toYear": "2020",
+      "link": "https://ct-college.net"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Strix",
+      "repositoryOwner": "StrixFramework",
+      "repositoryName": "Strix",
+      "type": 0,
+      "status": 2
+    }
+  ],
+  "contacts": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/lentro.dev"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Back-End Development",
+      "languages": [
+        {
+          "title": "C#",
+          "shortName": "csharp",
+          "level": 3
+        }
+      ],
+      "technologies": [
+        {
+          "title": "Windows Presentation Foundation (WPF) and Windows Forms (WF)",
+          "shortName": "dot-net",
+          "level": 3
+        },
+        {
+          "title": "ASP.NET Core",
+          "shortName": "dotnetcore",
+          "level": 2
+        }
+      ],
+      "IDEUsed": [
+        {
+          "title": "Rider",
+          "icon": "jetbrains",
+          "developerLink": "https://www.jetbrains.com/rider/"
+        },
+        {
+          "title": "Visual Studio",
+          "icon": "visualstudio",
+          "iconType": "plain",
+          "developerLink": "https://visualstudio.microsoft.com/"
+        }
+      ]
+    },
+    {
+      "title": "Front-End Development",
+      "languages": [
+        {
+          "title": "JavaScript",
+          "shortName": "javascript",
+          "level": 2
+        },
+        {
+          "title": "TypeScript",
+          "shortName": "typescript",
+          "level": 2
+        }
+      ],
+      "technologies": [
+        {
+          "title": "Node.JS",
+          "shortName": "nodejs",
+          "level": 2
+        },
+        {
+          "title": "ReactJS",
+          "shortName": "react",
+          "level": 2
+        },
+        {
+          "title": "NextJS",
+          "shortName": "nextjs",
+          "level": 2
+        },
+        {
+          "title": "HTML",
+          "shortName": "html5",
+          "level": 2
+        },
+        {
+          "title": "CSS",
+          "shortName": "css3",
+          "level": 2
+        }
+      ],
+      "IDEUsed": [
+        {
+          "title": "Visual Studio Code",
+          "icon": "visualstudio",
+          "iconType": "plain",
+          "developerLink": "https://code.visualstudio.com/"
+        },
+        {
+          "title": "WebStorm",
+          "icon": "jetbrains",
+          "developerLink": "https://www.jetbrains.com/webstorm/"
+        }
+      ]
+    }
+  ]
+}
