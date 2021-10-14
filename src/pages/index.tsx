@@ -71,7 +71,6 @@ const Home: NextPage<HomeProps> = ({configuration, smoothScrollTo, aboutMeText,}
                 <Container maxWidth={"lg"} sx={{flexGrow: 1}}>
                     <AboutMeSection text={aboutMeText}/>
                     <EducationSection configuration={configuration}/>
-                    {/*/!*<ProjectsSection configuration={configuration}/>*!/*/}
                     <SkillsSection configuration={configuration}/>
                 </Container>
                 <ApplicationFooter configuration={configuration}/>
@@ -84,7 +83,7 @@ const Home: NextPage<HomeProps> = ({configuration, smoothScrollTo, aboutMeText,}
 
 export const getStaticProps: GetStaticProps<HomeProps> = async (ctx) => {
 
-    const cfgFilePath = path.join(process.cwd(), 'scr', "configuration", "configuration.json");
+    const cfgFilePath = path.join(process.cwd(), 'src', "configuration", "configuration.json");
 
     let contents = await fs.readFile(cfgFilePath, "utf8");
 
