@@ -7,13 +7,13 @@ import '@fontsource/jetbrains-mono/400.css';
 import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 import {CookiesProvider} from "react-cookie";
 import {Scrollbar} from "react-scrollbars-custom";
-import React, { useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import ParticlesCanvas from "../components/ParticlesCanvas";
-import { isMobile} from "react-device-detect";
+import {isMobile} from "react-device-detect";
+import GoToTopButton from '../components/GoToTopButton';
+import {MutableRefObject, Ref} from "react";
 
-function MyApp({Component, pageProps }: AppProps) {
-
-
+function MyApp({Component, pageProps}: AppProps) {
     const theme = createTheme({
         palette: {
             mode: "dark"
@@ -23,32 +23,30 @@ function MyApp({Component, pageProps }: AppProps) {
         }
     });
 
-    //const ref = React.useRef();
-
-    let scrollRef = useRef<Scrollbar>(null);
-
     const scrollTo = (elementId: string) => {
         let el = document.getElementById(elementId);
-        (scrollRef?.current?.scrollerElement ?? document.scrollingElement)!.scrollTo({
-            top: el!.getBoundingClientRect().top,
+        (document.scrollingElement)!.scrollTo({
+            top: el?.getBoundingClientRect()?.top ?? 0,
             behavior: "smooth"
         })
     };
 
-    const [height, setH] = useState(0);
+    const [height, setHeight] = useState(0);
 
     useEffect(() => {
-        setH((scrollRef.current ?? document.scrollingElement)!.scrollHeight);
-    }, []);
+        setHeight(document.scrollingElement!.scrollHeight);
+    }, [height]);
+
     return <>
         <CookiesProvider>
             <ThemeProvider theme={theme}>
                 <CssBaseline/>
-                {!isMobile ? <ParticlesCanvas height={(height - 200).toString()}/> : <></>}
-                <Component {...pageProps} smoothScrollTo={scrollTo}/>
+                    <GoToTopButton smoothScrollTo={scrollTo}/>
+                    <ParticlesCanvas height={(height).toString() + "px"}/>
+                    <Component {...pageProps} smoothScrollTo={scrollTo}/>
             </ThemeProvider>
         </CookiesProvider>
     </>
 }
 
-export default MyApp;
+export default MyApp

@@ -1,20 +1,16 @@
-import type {GetServerSideProps, GetStaticProps, NextPage} from 'next'
+import type {GetStaticProps, NextPage} from 'next'
 import {useRouter} from "next/router";
 import {Box, Button, Container, createTheme, Grid, ThemeProvider, Typography, useTheme} from "@mui/material";
 import React, {useEffect} from 'react';
 import {ChevronRight} from "@mui/icons-material";
-
-import * as Scroll from 'react-scroll';
 import Configuration from "../models/Configuration";
 import EducationSection from "../sections/EducationSection";
 import ApplicationFooter from "../components/ApplicationFooter";
-import ParticlesCanvas from "../components/ParticlesCanvas";
 import ApplicationBar from "../components/ApplicationBar";
 import {promises as fs} from "fs";
 import path from "path";
 
 import Head from "next/head";
-import TechIcon from "../components/TechIcon";
 import SkillsSection from "../sections/SkillsSection";
 import AboutMeSection from "../sections/AboutMeSection";
 
@@ -39,7 +35,7 @@ const Home: NextPage<HomeProps> = ({configuration, smoothScrollTo, aboutMeText,}
     return (
         <>
             <Head>
-                <title>Hello World!</title>
+                <title>Mikhail Kozlov - lentro.dev</title>
                 <link
                     rel="stylesheet"
                     href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
@@ -72,10 +68,10 @@ const Home: NextPage<HomeProps> = ({configuration, smoothScrollTo, aboutMeText,}
                 </Grid>
             </Container>
             <Box sx={{boxShadow: theme => theme.shadows[9], backdropFilter: "blur(7.5px)"}}>
-                <Container maxWidth={"xl"} sx={{flexGrow: 1}}>
+                <Container maxWidth={"lg"} sx={{flexGrow: 1}}>
                     <AboutMeSection text={aboutMeText}/>
                     <EducationSection configuration={configuration}/>
-                    {/*<ProjectsSection configuration={configuration}/>*/}
+                    {/*/!*<ProjectsSection configuration={configuration}/>*!/*/}
                     <SkillsSection configuration={configuration}/>
                 </Container>
                 <ApplicationFooter configuration={configuration}/>
@@ -88,7 +84,7 @@ const Home: NextPage<HomeProps> = ({configuration, smoothScrollTo, aboutMeText,}
 
 export const getStaticProps: GetStaticProps<HomeProps> = async (ctx) => {
 
-    const cfgFilePath = path.join(process.cwd(), 'data', "configuration.json");
+    const cfgFilePath = path.join(process.cwd(), 'scr', "configuration", "configuration.json");
 
     let contents = await fs.readFile(cfgFilePath, "utf8");
 

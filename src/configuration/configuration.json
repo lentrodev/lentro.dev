@@ -1,0 +1,119 @@
+{
+  "appBarTitle": "lentro.dev",
+  "homeText": "Hello! I'm Mikhail and I'm backend software developer",
+
+  "aboutMeMarkdownFilePath" : "src/configuration/aboutMe.md",
+
+  "education": [
+    {
+      "name": "WIT (WSISiZ)",
+      "fromYear": "2020",
+      "link": "https://wit.edu.pl"
+    },
+    {
+      "name": "KhKTFK NTU \"KhPI\"",
+      "fromYear": "2018",
+      "toYear": "2020",
+      "link": "http://ct-college.net"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Strix",
+      "repositoryOwner": "StrixFramework",
+      "repositoryName": "Strix",
+      "type": 0,
+      "status": 2
+    }
+  ],
+  "contacts": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/lentrodev"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Back-End Development",
+      "id": "backend",
+      "languages": [
+        {
+          "title": "C#",
+          "shortName": "csharp",
+          "level": 3
+        },
+        {
+          "title": "JavaScript",
+          "shortName": "javascript",
+          "level": 2
+        }
+      ],
+      "technologies": [
+        {
+          "title": "WPF & WF",
+          "shortName": "dot-net",
+          "level": 3
+        },
+        {
+          "title": "ASP.NET Core",
+          "shortName": "dotnetcore",
+          "level": 2
+        }
+      ],
+      "IDEUsed": [
+        {
+          "title": "Rider",
+          "shortName": "jetbrains",
+          "developerLink": "https://www.jetbrains.com/rider/"
+        },
+        {
+          "title": "Visual Studio",
+          "shortName": "visualstudio",
+          "iconType": "plain",
+          "developerLink": "https://visualstudio.microsoft.com/"
+        }
+      ]
+    },
+    {
+      "title": "Front-End Development",
+      "id": "frontend",
+      "languages": [
+        {
+          "title": "JavaScript",
+          "shortName": "javascript",
+          "level": 2
+        },
+        {
+          "title": "TypeScript",
+          "shortName": "typescript",
+          "level": 2
+        }
+      ],
+      "technologies": [
+        {
+          "title": "Node.JS",
+          "shortName": "nodejs",
+          "level": 2
+        },
+        {
+          "title": "NextJS",
+          "shortName": "nextjs",
+          "level": 2
+        }
+      ],
+      "IDEUsed": [
+        {
+          "title": "Visual Studio Code",
+          "shortName": "visualstudio",
+          "iconType": "plain",
+          "developerLink": "https://code.visualstudio.com/"
+        },
+        {
+          "title": "WebStorm",
+          "shortName": "jetbrains",
+          "developerLink": "https://www.jetbrains.com/webstorm/"
+        }
+      ]
+    }
+  ]
+}
