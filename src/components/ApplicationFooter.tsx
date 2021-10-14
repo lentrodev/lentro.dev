@@ -43,7 +43,7 @@ export default function ApplicationFooter(props: PropsWithConfiguration) {
             <Grid container direction={"row"} spacing={3}>
                 <Grid item>
                     <Typography variant="body1">
-                        Made by Mikhail Kozlov with ReactJS, MaterialUI and NextJS
+                        Made with love by Mikhail Kozlov with NextJS & MaterialUI.
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         {'Copyright © '}

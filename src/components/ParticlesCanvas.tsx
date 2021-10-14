@@ -6,16 +6,17 @@ export default function ParticlesCanvas(props: {height: string}){
 
     return <Particles
         style={{
-            position: "absolute"
+            position: "absolute",
+            marginLeft: "3vw"
         }
         }
-        height={props.height}
-        width={"99vw"}
+        height={isMobile ? "100vh" : props.height}
+        width={"94vw"}
         params={
             {
                 particles: {
                     number: {
-                        value: isMobile ? 30 : 100,
+                        value: isMobile ? 30 : 150,
                     },
                     size: {
                         value: 2
