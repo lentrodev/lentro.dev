@@ -15,14 +15,13 @@ export enum Level {
 
 export interface DevelopmentStack {
     title: string;
+    id: string;
     languages: Knowledge[];
     technologies: Knowledge[];
     IDEUsed: IDE[];
 }
 
-export interface IDE {
-    title: string;
-    icon: string;
+export interface IDE extends Knowledge{
     iconType: string;
     developerLink: string;
 }

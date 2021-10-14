@@ -1,20 +1,20 @@
 {
   "appBarTitle": "lentro.dev",
-  "homeText": "Hello! I'm Mikhail, and I'm a backend .NET developer.",
+  "homeText": "Hello! I'm Mikhail and I'm backend software developer",
 
-  "aboutMeMarkdownFilePath" : "data/aboutMe.md",
+  "aboutMeMarkdownFilePath" : "src/configuration/aboutMe.md",
 
   "education": [
     {
-      "name": "WIT University of Information Technology and Management under the auspices of the Polish Academy of Sciences",
+      "name": "WIT (WSISiZ)",
       "fromYear": "2020",
       "link": "https://wit.edu.pl"
     },
     {
-      "name": "Separate structural subdivision Kharkiv Computer and Technological Professional College of NTU KhPI ",
+      "name": "KhKTFK NTU \"KhPI\"",
       "fromYear": "2018",
       "toYear": "2020",
-      "link": "https://ct-college.net"
+      "link": "http://ct-college.net"
     }
   ],
   "projects": [
@@ -29,22 +29,28 @@
   "contacts": [
     {
       "name": "GitHub",
-      "url": "https://github.com/lentro.dev"
+      "url": "https://github.com/lentrodev"
     }
   ],
   "skills": [
     {
       "title": "Back-End Development",
+      "id": "backend",
       "languages": [
         {
           "title": "C#",
           "shortName": "csharp",
           "level": 3
+        },
+        {
+          "title": "JavaScript",
+          "shortName": "javascript",
+          "level": 2
         }
       ],
       "technologies": [
         {
-          "title": "Windows Presentation Foundation (WPF) and Windows Forms (WF)",
+          "title": "WPF & WF",
           "shortName": "dot-net",
           "level": 3
         },
@@ -57,12 +63,12 @@
       "IDEUsed": [
         {
           "title": "Rider",
-          "icon": "jetbrains",
+          "shortName": "jetbrains",
           "developerLink": "https://www.jetbrains.com/rider/"
         },
         {
           "title": "Visual Studio",
-          "icon": "visualstudio",
+          "shortName": "visualstudio",
           "iconType": "plain",
           "developerLink": "https://visualstudio.microsoft.com/"
         }
@@ -70,6 +76,7 @@
     },
     {
       "title": "Front-End Development",
+      "id": "frontend",
       "languages": [
         {
           "title": "JavaScript",
@@ -89,36 +96,21 @@
           "level": 2
         },
         {
-          "title": "ReactJS",
-          "shortName": "react",
-          "level": 2
-        },
-        {
           "title": "NextJS",
           "shortName": "nextjs",
-          "level": 2
-        },
-        {
-          "title": "HTML",
-          "shortName": "html5",
-          "level": 2
-        },
-        {
-          "title": "CSS",
-          "shortName": "css3",
           "level": 2
         }
       ],
       "IDEUsed": [
         {
           "title": "Visual Studio Code",
-          "icon": "visualstudio",
+          "shortName": "visualstudio",
           "iconType": "plain",
           "developerLink": "https://code.visualstudio.com/"
         },
         {
           "title": "WebStorm",
-          "icon": "jetbrains",
+          "shortName": "jetbrains",
           "developerLink": "https://www.jetbrains.com/webstorm/"
         }
       ]
